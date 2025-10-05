@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program de desenare raster</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <h1>Program de desenare raster</h1>
+    <div id="siteWrap">
+        <div id="setari">
+            <div id="shapes">
+                <div id="shapes-title">Forma</div>
+                <button id="elipsa">⬭ Elipsa</button>
+                <button id="cerc">◯ Cerc</button>
+                <button id="dreptunghi">▭ Dreptunghi</button>
+                <button id="linie">- Linie</button>
+            </div>
+            <div id="tools">
+                <div id="tools-title">Culoare</div>
+                <div class="color-btn-div">
+                    <button class="color-btn" style="background-color: red;" data-color="red"></button>
+                    <button class="color-btn" style="background-color: yellow;" data-color="yellow"></button>
+                    <button class="color-btn" style="background-color: blue;" data-color="blue"></button>
+                    <button class="color-btn" style="background-color: green;" data-color="green"></button>
+                    <button class="color-btn" style="background-color: black;" data-color="black"></button>
+                    <input type="color" id="colorPicker">
+                </div>
+                <button id="backgroundBtn">Schimba culoarea fundalului</button>
+            </div>
+            <div id="divLineWidth">
+                <div id="lineWidth-title">Grosime linie</div>
+                <input type="range" id="lineWidth" min="1" max="10" value="3">
+            </div>
+            <div id="export-options">
+                <div id="listaFiguri-title">Altele</div>
+                <button id="clear-btn">Sterge tot</button>
+                <button id="exportBtn">Export...</button>
+                <div id="exportDropDown">
+                    <button id="exportRaster">Format Raster</button>
+                    <button id="exportVector">Format Vectorial</button>
+                </div>
+            </div>
+        </div>
+        <canvas id="canvasId" width="1250" height="900"></canvas>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

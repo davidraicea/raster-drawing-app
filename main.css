@@ -1,0 +1,324 @@
+body {
+    background-color: antiquewhite;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    font-style: normal;
+    color: darkgoldenrod;
+    outline-color: darkgoldenrod;
+    outline-style: dotted;
+}
+
+#siteWrap {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    width: 1474px;
+    height: 900px;
+    margin: 20px auto;
+    padding: 0px;
+    border: 2px solid darkgoldenrod;
+    border-radius: 20px;
+    background-color: white;
+}
+
+#setari {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    background-color: wheat;
+    height: 100%;
+    border: inherit;
+    border-radius: inherit;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#shapes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 2px solid darkgoldenrod;
+}
+
+#shapes-title {
+    text-align: center;
+    font-size: 1.2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    font-style: normal;
+    color: darkgoldenrod;
+    outline-color: darkgoldenrod;
+    outline-style: dotted;
+    width: 100%;
+}
+
+#shapes button {
+    display: block;
+    width: 70%;
+    padding: 5px;
+    font-size: 1em;
+    color: black;
+    background-color: antiquewhite;
+    border: 2px solid darkgoldenrod;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#shapes button:hover {
+    background-color: wheat;
+}
+
+#shapes button:active {
+    box-shadow: 2px 2px 5px darkgoldenrod;
+}
+
+#shapes button:focus {
+    background-color: burlywood;
+}
+
+#tools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 2px solid darkgoldenrod;
+
+}
+
+#tools-title {
+    text-align: center;
+    font-size: 1.2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    font-style: normal;
+    color: darkgoldenrod;
+    outline-color: darkgoldenrod;
+    outline-style: dotted;
+    width: 100%;
+}
+
+.color-btn-div {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.color-btn {
+    width: 25px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.color-btn:hover {
+    box-shadow: 2px 2px 5px darkgoldenrod;
+}
+
+.color-btn:focus {
+    box-shadow: 2px 2px 5px brown;
+}
+
+#colorPicker {
+    width: 25px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#divLineWidth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 2px solid darkgoldenrod;
+}
+
+#lineWidth-title {
+    text-align: center;
+    font-size: 1.2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    font-style: normal;
+    color: darkgoldenrod;
+    outline-color: darkgoldenrod;
+    outline-style: dotted;
+    width: 100%;
+}
+
+#lineWidth {
+    width: 80%;
+    cursor: pointer;
+    background: darkgoldenrod;
+    appearance: none;
+    border-radius: 10px;
+    height: 10px;
+}
+
+#lineWidth::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: burlywood;
+    border: 2px solid darkgoldenrod;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#lineWidth::-webkit-slider-thumb {
+    transition: transform 0.3s ease;
+}
+
+#lineWidth::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}
+
+#export-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+#exportBtn {
+    display: block;
+    width: 70%;
+    padding: 5px;
+    font-size: 1em;
+    color: black;
+    background-color: antiquewhite;
+    border: 2px solid darkgoldenrod;
+    border-radius: 10px;
+}
+
+#exportDropDown {
+    display: none;
+    position: absolute;
+    top: 93%;
+    left: 27%;
+    flex-direction: column;
+}
+
+#exportBtn:hover {
+    background-color: wheat;
+}
+
+#exportBtn:hover+#exportDropDown,
+#exportDropDown:hover {
+    display: flex;
+    box-shadow: 2px 2px 5px darkgoldenrod;
+}
+
+#exportDropDown button {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-size: 0.8em;
+    color: black;
+    background-color: antiquewhite;
+    border: 2px solid darkgoldenrod;
+    cursor: pointer;
+    text-align: center;
+}
+
+#exportDropDown button:hover {
+    background-color: wheat;
+}
+
+#exportDropDownbutton:active {
+    background-color: chocolate;
+}
+
+#exportDropDown button:focus {
+    background-color: burlywood;
+}
+
+#backgroundBtn {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-size: 0.8em;
+    color: black;
+    background-color: antiquewhite;
+    border: 2px solid darkgoldenrod;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#backgroundBtn:hover {
+    background-color: wheat;
+}
+
+#backgroundBtn:active {
+    box-shadow: 2px 2px 5px darkgoldenrod;
+}
+
+#backgroundBtn button:focus {
+    background-color: burlywood;
+}
+
+#listaFiguri {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 2px solid darkgoldenrod;
+}
+
+#listaFiguri-title {
+    text-align: center;
+    font-size: 1.2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    font-style: normal;
+    color: darkgoldenrod;
+    outline-color: darkgoldenrod;
+    outline-style: dotted;
+    width: 100%;
+}
+
+#canvasId {
+    display: flex;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: white;
+}
+
+#clear-btn {
+    display: block;
+    width: 70%;
+    padding: 5px;
+    font-size: 1em;
+    color: black;
+    background-color: antiquewhite;
+    border: 2px solid darkgoldenrod;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#clear-btn:hover {
+    background-color: wheat;
+}
+
+#clear-btn:active {
+    box-shadow: 2px 2px 5px darkgoldenrod;
+}
+
+#clear-btn:focus {
+    background-color: burlywood;
+}
