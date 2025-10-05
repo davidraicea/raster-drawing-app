@@ -2,7 +2,7 @@
 const canvas = document.getElementById('canvasId');
 const ctx = canvas.getContext('2d');
 
-const offscreenCanvas = document.createElement('canvas'); //invisible canvas, used for saving final draws
+const offscreenCanvas = document.createElement('canvas'); //invisible canvas, used for saving final drawings
 offscreenCanvas.width = canvas.width;
 offscreenCanvas.height = canvas.height;
 const offscreenCtx = offscreenCanvas.getContext('2d');
@@ -309,4 +309,5 @@ clearBtn.addEventListener('click', () => {
     canvas.style.backgroundColor = 'white';
     shapes = []
 });
+
 
